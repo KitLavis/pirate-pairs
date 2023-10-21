@@ -17,7 +17,37 @@
     <title>Pirate Pairs!</title>
 </head>
 <body>
+    <h1>Pirate Pairs!</h1>
     
+    <!-- Game board -->
+    <div class="gameboard">
+
+        <!-- 12 divs for the 12 cards -->
+        <div class="cards">00</div>
+        <div class="cards">01</div>
+        <div class="cards">02</div>
+        <div class="cards">03</div>
+        <div class="cards">04</div>
+        <div class="cards">05</div>
+        <div class="cards">06</div>
+        <div class="cards">07</div>
+        <div class="cards">08</div>
+        <div class="cards">09</div>
+        <div class="cards">10</div>
+        <div class="cards">11</div>
+    </div>
+
+    <!-- Score and sound controls -->
+    <div class="score-mute-container">
+        <h3 class="pair-counter">Correct pairs:</h3>
+        <button id="sound-toggle" aria-label="Toggle Sound">Toggle Sound</button>
+    </div>
+
+    <!-- How to play -->
+    <div class="rules-container">
+        <button id="rules-toggle" aria-label>How to Play</button>
+    </div>
+
     <!-- js link -->
     <script src="assets/js/script.js"></script>
 </body>
