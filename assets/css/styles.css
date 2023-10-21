@@ -8,6 +8,12 @@ body {
     background: center/cover url("../images/background.webp") no-repeat;
 }
 
+.header {
+    width: 100vw;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
 .gameboard {
     display: flex;
     box-sizing: border-box;
@@ -30,10 +36,19 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
+    bottom: 0;
 }
 
 .controls {
     background: 0;
     border: 0;
-    font-weight: 200%;
+    font-size: 300%;
+}
+
+#help-button {
+    padding-right: 1em;
+}
+
+#sound-button {
+    padding-left: 1em;
 }
