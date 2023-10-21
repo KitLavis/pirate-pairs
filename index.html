@@ -18,7 +18,7 @@
 </head>
 <body>
     <h1>Pirate Pairs!</h1>
-    
+
     <!-- Game board -->
     <div class="gameboard">
 
@@ -38,17 +38,19 @@
     </div>
 
     <!-- Score and sound controls -->
-    <div class="score-mute-container">
-        <h3 class="pair-counter">Correct pairs:</h3>
-        <button id="sound-toggle" aria-label="Toggle Sound">Toggle Sound</button>
+    <div class="score-container">
+        <h3 class="pair-counter">Correct pairs: 0</h3>
     </div>
 
     <!-- How to play -->
-    <div class="rules-container">
-        <button id="rules-toggle" aria-label>How to Play</button>
+    <div class="controls-container">
+        <button class="controls" id="rules-toggle" aria-label="How to Play"><i class="fa-regular fa-circle-question" style="color: #8c6546;"></i></button>
+        <button class="controls" id="sound-button" aria-label="Toggle Sound"><i class="fa-solid fa-volume-off" style="color: #8c6546;"></i></button>
     </div>
 
     <!-- js link -->
     <script src="assets/js/script.js"></script>
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/cd67891a35.js" crossorigin="anonymous"></script>
 </body>
 </html>
