@@ -1,3 +1,6 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
 * {
     margin: 0;
 }
@@ -6,13 +9,16 @@ body {
     width: 100vw;
     height: 100vh;
     background: center/cover url("../images/background.webp") no-repeat;
+    font-family: 'Pirata One', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .header {
     width: 100vw;
-    text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    text-align: center;
 }
 .gameboard {
     display: flex;
