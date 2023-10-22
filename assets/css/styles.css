@@ -59,3 +59,31 @@ body {
 #sound-button {
     padding-left: 0.5em;
 }
+
+/* media query for tablets and larger (768px and up) */
+@media only screen and (min-width: 768px) {
+
+    body {
+        position: relative;
+    }
+
+    .header {
+        font-size: 150%;
+    }
+
+    .gameboard {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cards {
+        width: 120px;
+        height: 180px;
+        margin: 5px;
+    }
+
+    .pair-counter {
+        font-size: 150%;
+    }
+}
