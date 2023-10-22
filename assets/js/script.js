@@ -66,12 +66,8 @@ function generateCards() {
       </div>
       `;
         gameBoard.appendChild(card);
-        // card.addEventListener("click", flipCard);
+       // card.addEventListener("click", flipCard);
     }
 }
 
 generateCards();
-
-function flipCard() {
-    card.classList.add("flipped");
-}
