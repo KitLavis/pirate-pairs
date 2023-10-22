@@ -49,5 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'treasure',
             img: 'assets/images/skull.webp'
         },
-    ]
+    ];
+
 })
