@@ -21,6 +21,9 @@ body {
     text-align: center;
 }
 .gameboard {
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
@@ -31,6 +34,7 @@ body {
     width: 80px;
     height: 120px;
     border: 1px solid red;
+    margin: 2px;
 }
 
 .score-container {
@@ -49,7 +53,7 @@ body {
 .controls {
     background: 0;
     border: 0;
-    font-size: 300%;
+    font-size: 200%;
 }
 
 #help-button {
@@ -86,4 +90,8 @@ body {
     .pair-counter {
         font-size: 150%;
     }
+}
+
+@media only screen and (min-width: 992px) {
+
 }
