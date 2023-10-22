@@ -20,6 +20,7 @@ body {
     padding-bottom: 0.5em;
     text-align: center;
 }
+
 .gameboard {
     width: 260px;
     margin-left: auto;
@@ -37,11 +38,13 @@ body {
     margin: 2px;
 }
 
+
 .score-container {
     width: 100vw;
     padding-top: 0.5em;
     text-align: center;
 }
+
 
 .controls-container {
     width: 100vw;
