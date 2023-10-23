@@ -74,13 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const optionOneId = cardsChosenId[0];
         const optionTwoId = cardsChosenId[1];
         if (cardsChosen[0] === cardsChosen[1]) {
-            alert('You found a match')
+            // add sound here
             cards[optionOneId].setAttribute("src", "assets/images/blank.webp")
             cards[optionTwoId].setAttribute("src", "assets/images/blank.webp")
             cardsWon.push(cardsChosen);
         } else {
             cards[optionOneId].setAttribute("src", "assets/images/card_back.webp")
             cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp")
+            // add sound here
         };
         cardsChosen = [];
         cardsChosenId = [];
