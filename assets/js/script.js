@@ -75,20 +75,22 @@ document.addEventListener("DOMContentLoaded", () => {
         var cards = document.querySelectorAll('img');
         const optionOneId = cardsChosenId[0];
         const optionTwoId = cardsChosenId[1];
+
         if (cardsChosen[0] === cardsChosen[1]) {
             // add sound here
-            cards[optionOneId].setAttribute("src", "assets/images/blank.webp")
-            cards[optionTwoId].setAttribute("src", "assets/images/blank.webp")
+            cards[optionOneId].setAttribute("src", "null");
+            cards[optionTwoId].setAttribute("src", "null")
             cardsWon.push(cardsChosen);
-            // card.removeEventListener("click", flipCard);
         } else {
             cards[optionOneId].setAttribute("src", "assets/images/card_back.webp")
             cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp")
             // add sound here
         };
+
         cardsChosen = [];
         cardsChosenId = [];
         pairCounter.textContent = cardsWon.length;
+
         if (cardsWon.length === cardArray.length / 2) {
             pairCounter.textContent = "Aaarrrgh! Not bad for a landlubber!";
             // auto restarts after 3 seconds
@@ -112,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsChosen = [];
         cardsChosenId = [];
         cardsWon = [];
+        cardArray.sort(() => 0.5 - Math.random());
         generateCards();
     }
 
