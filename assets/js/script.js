@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
     var cardsChosenId = [];
     var cardsWon = [];
 
+    const pairCounter = document.querySelector(".pair-counter");
+
     function generateCards() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement("img");
@@ -78,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cards[optionOneId].setAttribute("src", "assets/images/blank.webp")
             cards[optionTwoId].setAttribute("src", "assets/images/blank.webp")
             cardsWon.push(cardsChosen);
+            // card.removeEventListener("click", flipCard);
         } else {
             cards[optionOneId].setAttribute("src", "assets/images/card_back.webp")
             cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp")
@@ -85,7 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         cardsChosen = [];
         cardsChosenId = [];
+        pairCounter.textContent = cardsWon.length;
+        if (cardsWon.length === cardArray.length / 2) {
+            pairCounter.textContent = "Congratulations! You found them all!";
+        };
     };
+
 
     function flipCard() {
         var cardId = this.getAttribute('data-id');
