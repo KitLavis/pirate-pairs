@@ -78,15 +78,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (cardsChosen[0] === cardsChosen[1]) {
             // add sound here
-            cards[optionOneId].classList.add("flipped");
-            cards[optionTwoId].classList.add("flipped");
-            // cards[optionOneId].removeEventListener("click");
-            // cards[optionOneId].removeEventListener("click");
+            cards[optionOneId].classList.add("correct");
+            cards[optionTwoId].classList.add("correct");
             cardsWon.push(cardsChosen)
+            // removeEventListener("click", flipCard);
         } else {
             cards[optionOneId].setAttribute("src", "assets/images/card_back.webp")
             cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp")
-            // add sound here
         };
 
         cardsChosen = [];
@@ -105,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsChosen.push(cardArray[cardId].name);
         cardsChosenId.push(cardId);
         this.setAttribute("src", cardArray[cardId].img);
+        this.classList.add("flipped");
         if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500);
         }
@@ -120,5 +119,11 @@ document.addEventListener("DOMContentLoaded", () => {
         generateCards();
     }
 
+    function disableCard() {
+        let flippedCards = document.getElementsByClassName("correct");
+        flippedCards.removeEventListener("click", flipCard);
+    }
+
     generateCards();
+
 });
