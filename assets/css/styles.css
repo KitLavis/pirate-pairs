@@ -46,7 +46,8 @@ body {
 }
 
 .flipped {
-    background-image: transparent;
+    background-image: url("assets/images/blank.webp");
+    opacity: 0;
 }
 
 .score-container {
