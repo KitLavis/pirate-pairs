@@ -1,5 +1,6 @@
-const cards = [
+document.addEventListener("DOMContentLoaded", () => {
 
+    const cards = [
     {
         name: 'coin',
         img: 'asset/images/coin.webp'
@@ -48,26 +49,20 @@ const cards = [
         name: 'treasure',
         img: 'asset/images/treasure.webp'
     },
-];
+    ];
 
-let gameBoard = document.querySelector(".gameboard");
+    const gameBoard = document.querySelector(".gameboard");
 
-function generateCards() {
-    for (let card of cards) {
-        const card = document.createElement("div");
-        card.classList.add("card");
-        card.setAttribute("data-name", card.name);
-        card.innerHTML = `
-      <div class="front">
-        <img class="front-image" src=${card.image} />
-      </div>
-      <div class="back">
-        <img class="back-image" src="assets/images/card_back.webp">
-      </div>
-      `;
-        gameBoard.appendChild(card);
-       // card.addEventListener("click", flipCard);
+    function generateCards() {
+        for (let i = 0; i < cards.length; i++) {
+            var card = document.createElement("img");
+            card.setAttribute("src", "assets/images/card_back.webp");
+            card.setAttribute("data-id", i);
+            card.setAttribute("class", "card");
+            // card.addEventListener("click", flipCard);
+            gameBoard.appendChild(card);
+        }
     }
-}
 
-generateCards();
+    generateCards();
+});
