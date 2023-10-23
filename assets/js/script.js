@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     ];
 
+    cardArray.sort(() => 0.5 - Math.random());
+
     const gameBoard = document.querySelector(".gameboard");
     var cardsChosen = [];
     var cardsChosenId = [];
