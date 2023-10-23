@@ -78,8 +78,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (cardsChosen[0] === cardsChosen[1]) {
             // add sound here
-            cards[optionOneId].setAttribute("src", "null");
-            cards[optionTwoId].setAttribute("src", "null")
+            cards[optionOneId].classList.add("flipped");
+            cards[optionOneId].classList.add("flipped");
+            // cards[optionOneId].removeEventListener("click");
+            // cards[optionOneId].removeEventListener("click");
             cardsWon.push(cardsChosen);
         } else {
             cards[optionOneId].setAttribute("src", "assets/images/card_back.webp")
