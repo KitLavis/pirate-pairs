@@ -90,10 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsChosenId = [];
         pairCounter.textContent = cardsWon.length;
         if (cardsWon.length === cardArray.length / 2) {
-            pairCounter.textContent = "Congratulations! You found them all!";
+            pairCounter.textContent = "Aaarrrgh! Not bad for a landlubber!";
+            // auto restarts after 3 seconds
+            setTimeout(restart, 3000);
         };
     };
-
 
     function flipCard() {
         var cardId = this.getAttribute('data-id');
@@ -104,6 +105,15 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(checkForMatch, 500);
         }
     };
+
+    function restart() {
+        gameBoard.innerHTML = "";
+        pairCounter.textContent = "0";
+        cardsChosen = [];
+        cardsChosenId = [];
+        cardsWon = [];
+        generateCards();
+    }
 
     generateCards();
 });
