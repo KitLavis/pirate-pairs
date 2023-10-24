@@ -77,7 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const optionTwoId = cardsChosenId[1];
 
         if (cardsChosen[0] === cardsChosen[1]) {
-            // add sound here
+            const pairSound = document.getElementById("pair-sound");
+            pairSound.play();
             cards[optionOneId].classList.add("correct");
             cards[optionTwoId].classList.add("correct");
             cardsWon.push(cardsChosen)
