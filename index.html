@@ -23,6 +23,7 @@
     <!-- Game board/card area -->
     <div class="gameboard"></div>
     <audio id="pair-sound" src="assets/audio/pair-match.wav"></audio>
+    <audio id="flip-sound" src="assets/audio/page-turn.mp3"></audio>
 
     <!-- Score tally -->
     <div class="score-container">
@@ -33,7 +34,7 @@
     <!-- controls area -->
     <div class="controls-container">
         <button class="controls" id="help-button" aria-label="How to Play"><i class="fa-regular fa-circle-question" style="color: black;"></i></button>
-        <button class="controls" id="sound-button" aria-label="Toggle Sound"><i class="fa-solid fa-volume-off" style="color: black"></i></button>
+        <button class="controls" aria-label="Toggle Sound"><i id="sound-button" class="fa-solid fa-volume-off" style="color: black"></i></button>
     </div>
 
     <!-- js link -->

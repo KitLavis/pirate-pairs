@@ -60,13 +60,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const pairCounter = document.querySelector(".pair-counter");
 
+    function muteAudio() {
+        const sounds = document.querySelectorAll("audio");
+        for (const sound of sounds)
+        sound.muted = true;
+    }
+
+    function toggleAudio () {
+        const sounds = document.querySelectorAll("audio");
+        const audioToggle = document.getElementById("sound-button");
+
+        if (audioToggle.className === "fa-solid fa-volume-off") {
+            audioToggle.className = "fa-solid fa-volume-high"
+            for (const sound of sounds) {
+                sound.muted = false;
+            }
+        } else {
+            audioToggle.className = "fa-solid fa-volume-off";
+            for (const sound of sounds) {
+                sound.muted = true;
+            }
+        };
+    }
+
     function generateCards() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement("img");
+            const audioToggle = document.getElementById("sound-button");
             card.setAttribute("src", "assets/images/card_back.webp");
             card.setAttribute("data-id", i);
             card.setAttribute("class", "card back");
             card.addEventListener("click", flipCard);
+            audioToggle.addEventListener("click", toggleAudio);
             gameBoard.appendChild(card);
         }
     };
@@ -83,6 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
             cards[optionTwoId].classList.add("correct");
             cardsWon.push(cardsChosen)
         } else {
+            const flipSound = document.getElementById("flip-sound");
+            flipSound.play();
+
             cards[optionOneId].setAttribute("src", "assets/images/card_back.webp");
             cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp");
             cards[optionOneId].addEventListener("click", flipCard);
@@ -109,12 +137,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function flipCard() {
         var cardId = this.getAttribute('data-id');
+
         cardsChosen.push(cardArray[cardId].name);
         cardsChosenId.push(cardId);
         this.setAttribute("src", cardArray[cardId].img);
         this.classList.add("flipped");
         this.classList.remove("back");
         this.removeEventListener("click", flipCard);
+        
         if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500);
         }
@@ -131,5 +161,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     generateCards();
+    muteAudio();
 
 });
