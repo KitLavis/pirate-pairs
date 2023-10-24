@@ -81,10 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
             cards[optionOneId].classList.add("correct");
             cards[optionTwoId].classList.add("correct");
             cardsWon.push(cardsChosen)
-            // removeEventListener("click", flipCard);
         } else {
-            cards[optionOneId].setAttribute("src", "assets/images/card_back.webp")
-            cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp")
+            cards[optionOneId].setAttribute("src", "assets/images/card_back.webp");
+            cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp");
+            cards[optionOneId].addEventListener("click", flipCard);
+            cards[optionTwoId].addEventListener("click", flipCard);
         };
 
         cardsChosen = [];
@@ -104,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsChosenId.push(cardId);
         this.setAttribute("src", cardArray[cardId].img);
         this.classList.add("flipped");
+        this.removeEventListener("click", flipCard);
         if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500);
         }
@@ -117,11 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
         cardsWon = [];
         cardArray.sort(() => 0.5 - Math.random());
         generateCards();
-    }
-
-    function disableCard() {
-        let flippedCards = document.getElementsByClassName("correct");
-        flippedCards.removeEventListener("click", flipCard);
     }
 
     generateCards();
