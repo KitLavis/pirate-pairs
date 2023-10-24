@@ -98,6 +98,8 @@ document.addEventListener("DOMContentLoaded", () => {
         pairCounter.textContent = cardsWon.length;
 
         if (cardsWon.length === cardArray.length / 2) {
+            const victorySound = document.getElementById("victory-sound");
+            victorySound.play();
             pairCounter.textContent = "Aaarrrgh! Not bad for a landlubber!";
             // auto restarts after 3 seconds
             setTimeout(restart, 3000);
