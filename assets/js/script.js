@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             var card = document.createElement("img");
             card.setAttribute("src", "assets/images/card_back.webp");
             card.setAttribute("data-id", i);
-            card.setAttribute("class", "card");
+            card.setAttribute("class", "card back");
             card.addEventListener("click", flipCard);
             gameBoard.appendChild(card);
         }
@@ -86,6 +86,10 @@ document.addEventListener("DOMContentLoaded", () => {
             cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp");
             cards[optionOneId].addEventListener("click", flipCard);
             cards[optionTwoId].addEventListener("click", flipCard);
+            cards[optionOneId].classList.remove("flipped");
+            cards[optionTwoId].classList.remove("flipped");
+            cards[optionOneId].classList.add("back");
+            cards[optionTwoId].classList.add("back");
         };
 
         cardsChosen = [];
@@ -99,12 +103,14 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     };
 
+
     function flipCard() {
         var cardId = this.getAttribute('data-id');
         cardsChosen.push(cardArray[cardId].name);
         cardsChosenId.push(cardId);
         this.setAttribute("src", cardArray[cardId].img);
         this.classList.add("flipped");
+        this.classList.remove("back");
         this.removeEventListener("click", flipCard);
         if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500);
