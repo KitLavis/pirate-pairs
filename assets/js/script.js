@@ -66,12 +66,23 @@ const pairCounter = document.querySelector(".pair-counter");
 const playButton = document.querySelector("#play-button");
 playButton.addEventListener("click", playGame);
 
+const form = document.getElementsByTagName("form");
+
+function submitForm(event) {
+    event.preventDefault();
+}
+
+form.addEventListener("submit", submitForm);
+
 function playGame() {
     let introScreen = document.querySelector(".intro");
-    introScreen.classList.add("hidden");
-    gameBoard.classList.remove("hidden");
-    scoreSection.classList.remove("hidden");
-    generateCards();
+    let username = document.querySelector("#username");
+    if (username.val = "") {
+        introScreen.classList.add("hidden");
+        gameBoard.classList.remove("hidden");
+        scoreSection.classList.remove("hidden");
+        generateCards();
+    }
 }
 
 function muteAudio() {
