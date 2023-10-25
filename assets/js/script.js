@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
+    muteAudio();
+    const audioToggle = document.getElementById("sound-button");
+    audioToggle.addEventListener("click", toggleAudio);
 });
 
 const cardArray = [
@@ -68,56 +70,32 @@ playButton.addEventListener("click", playGame);
 
 const form = document.getElementsByTagName("form");
 
-function submitForm(event) {
-    event.preventDefault();
-}
-
-form.addEventListener("submit", submitForm);
-
 function playGame() {
     let introScreen = document.querySelector(".intro");
-    let username = document.querySelector("#username");
-    if (username.val = "") {
+    // if (username.val == "") {
         introScreen.classList.add("hidden");
         gameBoard.classList.remove("hidden");
         scoreSection.classList.remove("hidden");
         generateCards();
-    }
-}
-
-function muteAudio() {
-    const sounds = document.querySelectorAll("audio");
-    for (const sound of sounds)
-    sound.muted = true;
-}
-
-function toggleAudio () {
-    const sounds = document.querySelectorAll("audio");
-    const audioToggle = document.getElementById("sound-button");
-
-    if (audioToggle.className === "fa-solid fa-volume-off") {
-        audioToggle.className = "fa-solid fa-volume-high"
-        for (const sound of sounds) {
-            sound.muted = false;
-        }
-    } else {
-        audioToggle.className = "fa-solid fa-volume-off";
-        for (const sound of sounds) {
-            sound.muted = true;
-        }
-    };
+   // }
 }
 
 function generateCards() {
     for (let i = 0; i < cardArray.length; i++) {
         var card = document.createElement("img");
-        const audioToggle = document.getElementById("sound-button");
         card.setAttribute("src", "assets/images/card_back.webp");
         card.setAttribute("data-id", i);
         card.setAttribute("class", "card back");
         card.addEventListener("click", flipCard);
-        audioToggle.addEventListener("click", toggleAudio);
         gameBoard.appendChild(card);
+    }
+
+    const username = document.querySelector("#username");
+
+    if (username.value === "") {
+        pairCounter.textContent = "Your pairs: " + cardsWon.length;
+    } else {
+        pairCounter.textContent = username.value + "'s pairs: " + cardsWon.length;
     }
 };
 
@@ -145,10 +123,9 @@ function checkForMatch() {
         cards[optionOneId].classList.add("back");
         cards[optionTwoId].classList.add("back");
     };
-
+    
     cardsChosen = [];
     cardsChosenId = [];
-    pairCounter.textContent = cardsWon.length;
 
     if (cardsWon.length === cardArray.length / 2) {
         const victorySound = document.getElementById("victory-sound");
@@ -159,6 +136,28 @@ function checkForMatch() {
     };
 };
 
+function muteAudio() {
+    const sounds = document.querySelectorAll("audio");
+    for (const sound of sounds)
+        sound.muted = true;
+}
+
+function toggleAudio() {
+    const sounds = document.querySelectorAll("audio");
+    const audioToggle = document.getElementById("sound-button");
+
+    if (audioToggle.className === "fa-solid fa-volume-off") {
+        audioToggle.className = "fa-solid fa-volume-high";
+        for (const sound of sounds) {
+            sound.muted = false;
+        }
+    } else {
+        audioToggle.className = "fa-solid fa-volume-off";
+        for (const sound of sounds) {
+            sound.muted = true;
+        }
+    };
+}
 
 function flipCard() {
     var cardId = this.getAttribute('data-id');
