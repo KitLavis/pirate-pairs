@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
+});
 
     const cardArray = [
     {
@@ -162,5 +164,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     generateCards();
     muteAudio();
-
-});
