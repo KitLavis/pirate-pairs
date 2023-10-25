@@ -18,27 +18,31 @@
 <body>
 
     <!-- Intro Screen with username input -->
-    <section class="intro-screen">
-        <h1>Pirate Pairs!</h1>
-        <h3>The pirate themed matching cards memory game!</h4> 
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br>
-    </section>
+  
 
     <!-- Game Screen -->
     <section class="game-screen" class="hidden">
 
         <div class="header">
             <h1>Pirate Pairs!</h1>
+
+            <section class="intro">
+            <h3 class="intro">The pirate themed matching cards memory game!</h3>
+            <form class="intro">
+                <label class="intro" for="username">Username:</label><br>
+                <input class="intro" type="text" id="username" required><br>
+                <button class="intro" id="play-button">PLAY</button>
+            </form>
+            </section>
         </div>
 
         <!-- Game board/card area -->
-        <div class="gameboard"></div>
+        <div class="gameboard hidden"></div>
         <audio id="pair-sound" src="assets/audio/pair-match.wav"></audio>
         <audio id="flip-sound" src="assets/audio/page-turn.mp3"></audio>
 
         <!-- Score tally -->
-        <section class="score-container">
+        <section class="score-section hidden">
             <h3>Correct pairs:<span class="pair-counter"></span></h3>
         </section>
         <audio id="victory-sound" src="assets/audio/victory-sound.mp3"></audio>

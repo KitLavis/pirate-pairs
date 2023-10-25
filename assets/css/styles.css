@@ -8,6 +8,7 @@
 .hidden {
     display: none;
     opacity: 0;
+    background: none;
 }
 
 body {
@@ -32,6 +33,10 @@ body {
     background: center/cover url("../images/background.webp") no-repeat;
     z-index: 100;
     text-align: center;
+}
+
+.intro-screen > h1, h3 {
+    padding: 1em, 0;
 }
 
 .gameboard {
@@ -62,7 +67,7 @@ body {
     opacity: 0;
 }
 
-.score-container {
+.score-section {
     width: 100vw;
     padding-top: 0.5em;
     text-align: center;
