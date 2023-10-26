@@ -63,7 +63,9 @@ var cardsChosenId = [];
 var cardsWon = [];
 
 const scoreSection = document.querySelector(".score-section");
+const counterContainer = document.querySelector('#counter-container');
 const pairCounter = document.querySelector(".pair-counter");
+const resultsScreen = document.querySelector('#results-screen');
 
 const playButton = document.querySelector("#play-button");
 playButton.addEventListener("click", playGame);
@@ -72,12 +74,12 @@ const form = document.getElementsByTagName("form");
 
 function playGame() {
     let introScreen = document.querySelector(".intro");
-    // if (username.val == "") {
-        introScreen.classList.add("hidden");
-        gameBoard.classList.remove("hidden");
-        scoreSection.classList.remove("hidden");
-        generateCards();
-   // }
+    const username = document.querySelector("#username");
+
+    introScreen.classList.add("hidden");
+    gameBoard.classList.remove("hidden");
+    scoreSection.classList.remove("hidden");
+    generateCards();
 }
 
 function generateCards() {
@@ -89,14 +91,11 @@ function generateCards() {
         card.addEventListener("click", flipCard);
         gameBoard.appendChild(card);
     }
-
-    const username = document.querySelector("#username");
-
     if (username.value === "") {
-        pairCounter.textContent = "Your pairs: " + cardsWon.length;
+        counterContainer.textContent = "Your pairs: " + cardsWon.length;
     } else {
-        pairCounter.textContent = username.value + "'s pairs: " + cardsWon.length;
-    }
+        counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
+    };
 };
 
 function checkForMatch() {
@@ -110,6 +109,7 @@ function checkForMatch() {
         cards[optionOneId].classList.add("correct");
         cards[optionTwoId].classList.add("correct");
         cardsWon.push(cardsChosen)
+        console.log(cardsWon);
     } else {
         const flipSound = document.getElementById("flip-sound");
         flipSound.play();
@@ -123,16 +123,28 @@ function checkForMatch() {
         cards[optionOneId].classList.add("back");
         cards[optionTwoId].classList.add("back");
     };
+
+    if (username.value === "") {
+        counterContainer.textContent = "Your pairs: " + cardsWon.length;
+    } else {
+        counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
+    };
     
     cardsChosen = [];
     cardsChosenId = [];
 
     if (cardsWon.length === cardArray.length / 2) {
         const victorySound = document.getElementById("victory-sound");
+        const resetButton = document.getElementById("reset-button")
+        resetButton.addEventListener("click", restart);
+        gameBoard.classList.add("hidden");
+        scoreSection.classList.add("hidden");
+        resultsScreen.classList.remove("hidden");
         victorySound.play();
-        pairCounter.textContent = "Aaarrrgh! Not bad for a landlubber!";
+
+        // pairCounter.textContent = "Aaarrrgh! Not bad for a landlubber!";
         // auto restarts after 3 seconds
-        setTimeout(restart, 3000);
+        // setTimeout(restart, 3000);
     };
 };
 
@@ -176,11 +188,14 @@ function flipCard() {
 
 function restart() {
     gameBoard.innerHTML = "";
-    pairCounter.textContent = "0";
+    // pairCounter.textContent = "0";
     cardsChosen = [];
     cardsChosenId = [];
     cardsWon = [];
     cardArray.sort(() => 0.5 - Math.random());
+    resultsScreen.classList.add("hidden");
+    gameBoard.classList.remove("hidden");
+    scoreSection.classList.remove("hidden");
     generateCards();
 }
 

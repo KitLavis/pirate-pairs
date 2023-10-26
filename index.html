@@ -38,7 +38,7 @@
 
         <!-- Score tally -->
         <section class="score-section hidden">
-            <h3><span class="pair-counter"></span></h3>
+            <h3 id="counter-container"><span class="pair-counter"></span></h3>
         </section>
         <audio id="victory-sound" src="assets/audio/victory-sound.mp3"></audio>
 
@@ -49,9 +49,15 @@
         </section>
     </section>
 
+    <!-- Results Screen -->
+    <section id="results-screen" class="results hidden">
+        <h3 class="results">Congratulations! Not bad for a landlubber!</h3>
+        <button class="results" id="reset-button">Play again?</button>
+    </section>
+
     <!-- js link -->
     <script src="assets/js/script.js"></script>
-    
+
     <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/cd67891a35.js" crossorigin="anonymous"></script>
 </body>
