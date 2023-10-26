@@ -137,6 +137,7 @@ function checkForMatch() {
         const resetButton = document.getElementById("reset-button")
         resetButton.addEventListener("click", restart);
         gameBoard.classList.add("hidden");
+        gameBoard.innerHTML = "";
         scoreSection.classList.add("hidden");
         resultsScreen.classList.remove("hidden");
         victorySound.play();

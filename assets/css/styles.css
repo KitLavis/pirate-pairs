@@ -45,6 +45,21 @@ body {
     margin-bottom: 1em;
 }
 
+#results-screen {
+    width: 100vw;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#results-screen h3 {
+    margin-bottom: 1em;
+}
+
+button {
+    
+}
+
 .gameboard {
     width: 260px;
     margin-left: auto;
