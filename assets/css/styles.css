@@ -185,8 +185,40 @@ ul li {
     .score-container {
         font-size: 150%;
     }
+
+    #how-to {
+        bottom: 61px;
+        top: auto;
+        width: 70vw;
+        margin-right: 15vw;
+        margin-left: 15vw;
+    }
+
+    #how-to-alt {
+        bottom: 61px;
+        width: 70vw;
+        margin-right: 15vw;
+        margin-left: 15vw;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    #how-to {
+        bottom: 61px;
+        top: auto;
+        width: 50vw;
+        margin-right: 25vw;
+        margin-left: 25vw;
+    }
 
+    #how-to-alt {
+        bottom: 61px;
+        width: 50vw;
+        margin-right: 25vw;
+        margin-left: 25vw;
+    }
+
+    #intro-pirate {
+        width: 300px;
+    }
 }

@@ -114,7 +114,7 @@ function generateCards() {
  * Also controls the output of the score section
  */
 function checkForMatch() {
-    var cards = document.querySelectorAll('img');
+    var cards = document.querySelectorAll('.card');
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
 
