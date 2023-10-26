@@ -194,12 +194,11 @@ function restart() {
     generateCards();
 };
 
-const helpButton = document.getElementById("help-button");
-helpButton.addEventListener("click", showHowTo);
-
-function showHowTo() {
-    const howTo = document.getElementsByClassName("how-to");
-    if (howTo.className === "how-to") {
-        howTo.className = "how-to visible";
-    };
-}
+function toggleHowTo() {
+    const howTo = document.getElementById("how-to");
+    if (howTo.style.display === "block") {
+        howTo.style.display = "none";
+    } else {
+        howTo.style.display = "block";
+    }
+};
