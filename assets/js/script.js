@@ -61,7 +61,6 @@ const gameBoard = document.querySelector(".gameboard");
 var cardsChosen = [];
 var cardsChosenId = [];
 var cardsWon = [];
-
 const scoreSection = document.querySelector(".score-section");
 const counterContainer = document.querySelector('#counter-container');
 const pairCounter = document.querySelector(".pair-counter");
@@ -71,18 +70,24 @@ const howTo = document.getElementById("how-to-alt");
 const playButton = document.querySelector("#play-button");
 playButton.addEventListener("click", playGame);
 
-const form = document.getElementsByTagName("form");
-
+/**
+ * Starts the game when play-button is clicked
+ */
 function playGame() {
+
     let introScreen = document.querySelector(".intro");
     const username = document.querySelector("#username");
-
     introScreen.classList.add("hidden");
     gameBoard.classList.remove("hidden");
     scoreSection.classList.remove("hidden");
     generateCards();
 }
 
+/**
+ * Reveals gameboard and generates the cards face down
+ * Brings how to play popup closer to the top of the
+ * viewport so that it doesn't cover the control icons
+ */
 function generateCards() {
     for (let i = 0; i < cardArray.length; i++) {
         var card = document.createElement("img");
@@ -91,7 +96,8 @@ function generateCards() {
         card.setAttribute("class", "card back");
         card.addEventListener("click", flipCard);
         gameBoard.appendChild(card);
-    }
+    };
+
     howTo.setAttribute("id", "how-to");
 
     if (username.value === "") {
@@ -101,6 +107,12 @@ function generateCards() {
     };
 };
 
+/**
+ * Checks to see if the cards in the choseCards array match
+ * If they do the card-type is pushed to the cardsWon array
+ * If not they are removed from the chosenCards array and flipped
+ * Also controls the output of the score section
+ */
 function checkForMatch() {
     var cards = document.querySelectorAll('img');
     const optionOneId = cardsChosenId[0];
@@ -137,7 +149,7 @@ function checkForMatch() {
 
     if (cardsWon.length === cardArray.length / 2) {
         const victorySound = document.getElementById("victory-sound");
-        const resetButton = document.getElementById("reset-button")
+        const resetButton = document.getElementById("reset-button");
         resetButton.addEventListener("click", restart);
         gameBoard.classList.add("hidden");
         gameBoard.innerHTML = "";
@@ -148,12 +160,18 @@ function checkForMatch() {
     };
 };
 
+/**
+ * Mutes all the audio on startup/refresh
+ */
 function muteAudio() {
     const sounds = document.querySelectorAll("audio");
     for (const sound of sounds)
         sound.muted = true;
 }
 
+/**
+ * Allows speaker icon/button to act as an on/off switch for all audio
+ */
 function toggleAudio() {
     const sounds = document.querySelectorAll("audio");
     const audioToggle = document.getElementById("sound-button");
@@ -171,6 +189,10 @@ function toggleAudio() {
     };
 }
 
+/**
+ * Flips the card when it is clicked on
+ * Pushes the flipped card to the cardsChosen array
+ */
 function flipCard() {
     var cardId = this.getAttribute('data-id');
 
@@ -186,6 +208,10 @@ function flipCard() {
     }
 };
 
+/**
+ * Resets the gameboard and score section once the user has found
+ * all the pairs and clicked the play again button
+ */
 function restart() {
     gameBoard.innerHTML = "";
     cardsChosen = [];
@@ -198,8 +224,10 @@ function restart() {
     generateCards();
 };
 
+/**
+ * Reveals/hides the how to section when the help icon is clicked
+ */
 function toggleHowTo() {
-    // const howTo = document.getElementById("how-to-alt");
     if (howTo.style.display === "block") {
         howTo.style.display = "none";
     } else {
