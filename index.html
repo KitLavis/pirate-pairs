@@ -43,17 +43,24 @@
         <audio id="flip-sound" src="assets/audio/page-turn.mp3"></audio>
 
         <!-- Score tally -->
-        <section class="score-section hidden">
+        <div class="score-section hidden">
             <h3 id="counter-container"><span class="pair-counter"></span></h3>
-        </section>
+        </div>
         <audio id="victory-sound" src="assets/audio/victory-sound.mp3"></audio>
 
         <!-- controls area -->
-        <section class="controls-container">
+        <div class="controls-container">
             <button class="controls" id="help-button" aria-label="How to Play"><i class="fa-regular fa-circle-question" style="color: black;"></i></button>
             <button class="controls" aria-label="Toggle Sound"><i id="sound-button" class="fa-solid fa-volume-off" style="color: black"></i></button>
-        </section>
+        </div>
     </section>
+
+    <!-- How to play pop-up -->
+    <div class="how-to">
+        <h3>How to Play</h3>
+        <p>The game starts with all the cards face down. You then turn over two cards at a time. If the two cards have the
+        same picture, then you keep the cards, otherwise cards turn face down again. Once you've found all the pairs, you win!</p>
+    </div>
 
     <!-- js link -->
     <script src="assets/js/script.js"></script>

@@ -117,6 +117,14 @@ button {
     padding-right: 0.5em;
 }
 
+.how-to {
+    visibility: hidden;
+}
+
+.how-to .show {
+    visibility: visible;
+}
+
 #sound-button {
     padding-left: 0.5em;
 }

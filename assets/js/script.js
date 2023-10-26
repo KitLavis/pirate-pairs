@@ -193,3 +193,13 @@ function restart() {
     scoreSection.classList.remove("hidden");
     generateCards();
 };
+
+const helpButton = document.getElementById("help-button");
+helpButton.addEventListener("click", showHowTo);
+
+function showHowTo() {
+    const howTo = document.getElementsByClassName("how-to");
+    if (howTo.className === "how-to") {
+        howTo.className = "how-to visible";
+    };
+}
