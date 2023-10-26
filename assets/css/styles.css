@@ -170,6 +170,10 @@ ul li {
         font-size: 150%;
     }
 
+    #intro-pirate {
+        max-width: 300px;
+    }
+
     .gameboard {
         width: 600px;
         margin-left: auto;
