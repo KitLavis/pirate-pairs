@@ -129,6 +129,22 @@ button {
     background-color: #E3C894;
     border: 2px solid white;
     border-radius: 5%;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+#how-to-alt {
+    display: none;
+    position: absolute;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    bottom: 57px;
+    align-items: center;
+    text-align: center;
+    background-color: #E3C894;
+    border: 2px solid white;
+    border-radius: 5%;
+    font-family: 'Gill Sans', sans-serif;
 }
 
 #sound-button {

@@ -66,6 +66,7 @@ const scoreSection = document.querySelector(".score-section");
 const counterContainer = document.querySelector('#counter-container');
 const pairCounter = document.querySelector(".pair-counter");
 const resultsScreen = document.querySelector('#results-screen');
+const howTo = document.getElementById("how-to-alt");
 
 const playButton = document.querySelector("#play-button");
 playButton.addEventListener("click", playGame);
@@ -91,6 +92,8 @@ function generateCards() {
         card.addEventListener("click", flipCard);
         gameBoard.appendChild(card);
     }
+    howTo.setAttribute("id", "how-to");
+
     if (username.value === "") {
         counterContainer.textContent = "Your pairs: " + cardsWon.length;
     } else {
@@ -141,6 +144,7 @@ function checkForMatch() {
         scoreSection.classList.add("hidden");
         resultsScreen.classList.remove("hidden");
         victorySound.play();
+        howTo.setAttribute("id", "how-to-alt");
     };
 };
 
@@ -195,7 +199,7 @@ function restart() {
 };
 
 function toggleHowTo() {
-    const howTo = document.getElementById("how-to");
+    // const howTo = document.getElementById("how-to-alt");
     if (howTo.style.display === "block") {
         howTo.style.display = "none";
     } else {
