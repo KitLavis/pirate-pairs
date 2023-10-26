@@ -32,8 +32,17 @@ body {
     text-align: center;
 }
 
-.intro-screen > h1, h3 {
-    padding: 1em, 0;
+#intro-screen  h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#username {
+    margin-bottom: 1em;
+}
+
+#play-button {
+    margin-bottom: 1em;
 }
 
 .gameboard {
