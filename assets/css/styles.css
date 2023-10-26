@@ -119,6 +119,16 @@ button {
 
 #how-to {
     display: none;
+    position: absolute;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    top: 57px;
+    align-items: center;
+    text-align: center;
+    background-color: #E3C894;
+    border: 2px solid white;
+    border-radius: 5%;
 }
 
 #sound-button {
