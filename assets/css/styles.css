@@ -37,12 +37,16 @@ body {
     padding-bottom: 1em;
 }
 
+#intro-pirate {
+    width: 50vw
+}
+
 #username {
     margin-bottom: 1em;
 }
 
 #play-button {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 #results-screen {
@@ -125,11 +129,10 @@ button {
     margin-right: 5vw;
     top: 57px;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background-color: #E3C894;
     border: 2px solid white;
     border-radius: 5%;
-    font-family: 'Gill Sans', sans-serif;
 }
 
 #how-to-alt {
@@ -140,11 +143,16 @@ button {
     margin-right: 5vw;
     bottom: 57px;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background-color: #E3C894;
     border: 2px solid white;
     border-radius: 5%;
+}
+
+ul li {
     font-family: 'Gill Sans', sans-serif;
+    text-transform: none;
+    letter-spacing: 2px;
 }
 
 #sound-button {

@@ -22,7 +22,9 @@
 
     <!-- Intro Screen with username input -->
     <section class="intro" id="intro-screen">
-        <h3 class="intro">The pirate themed matching cards memory game!</h3>
+        <!-- <h3 class="intro">The pirate themed matching cards memory game!</h3> -->
+        <img id="intro-pirate" src="assets/images/pirate-skull.webp" alt="skull and cross bones">
+        <br>
         <label class="intro" for="username">- Username -</label><br>
         <input class="intro" type="text" id="username" placeholder="optional"><br>
         <button class="intro" id="play-button">PLAY</button>
@@ -57,8 +59,12 @@
 
     <!-- How to play pop-up -->
     <div id="how-to-alt">
-        <p>The game starts with all the cards face down. You then turn over two cards at a time. If the two cards have the
-        same picture, then you keep the cards, otherwise cards turn face down again. Once you've found all the pairs, you win!</p>
+        <ul>
+            <li>The game starts with all cards face down.</li>
+            <li>Click on a card to flip it over.</li>
+            <li>Once you've flipped two cards, if they match you keep them. Otherwise they flip back over.</li>
+            <li>Once you've found all the pairs, you win!</li>
+        </ul>
     </div>
 
     <!-- js link -->
