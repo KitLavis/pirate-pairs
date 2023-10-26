@@ -27,11 +27,8 @@ body {
     text-align: center;
 }
 
-.intro-screen {
+#intro-screen {
     width: 100vw;
-    height: 100vh;
-    background: center/cover url("../images/background.webp") no-repeat;
-    z-index: 100;
     text-align: center;
 }
 

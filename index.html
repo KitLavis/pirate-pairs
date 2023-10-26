@@ -16,23 +16,20 @@
     <title>PIRATE PAIRS!</title>
 </head>
 <body>
+    <div class="header">
+        <h1>Pirate Pairs!</h1>
+    </div>
 
     <!-- Intro Screen with username input -->
-  
-
-    <!-- Game Screen -->
-    <section class="game-screen" class="hidden">
-
-        <div class="header">
-            <h1>Pirate Pairs!</h1>
-
-            <section class="intro">
-            <h3 class="intro">The pirate themed matching cards memory game!</h3>
-                <label class="intro" for="username">Username:</label><br>
-                <input class="intro" type="text" id="username" placeholder="optional"><br>
-                <button class="intro" id="play-button">PLAY</button>
-            </section>
-        </div>
+    <section class="intro" id="intro-screen">
+        <h3 class="intro">The pirate themed matching cards memory game!</h3>
+        <label class="intro" for="username">Username:</label><br>
+        <input class="intro" type="text" id="username" placeholder="optional"><br>
+        <button class="intro" id="play-button">PLAY</button>
+    </section>
+        
+        <!-- Game Screen -->
+    <section class="game-screen">
 
         <!-- Game board/card area -->
         <div class="gameboard hidden"></div>
@@ -54,6 +51,7 @@
 
     <!-- js link -->
     <script src="assets/js/script.js"></script>
+    
     <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/cd67891a35.js" crossorigin="anonymous"></script>
 </body>
