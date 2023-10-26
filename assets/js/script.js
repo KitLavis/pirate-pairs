@@ -109,7 +109,6 @@ function checkForMatch() {
         cards[optionOneId].classList.add("correct");
         cards[optionTwoId].classList.add("correct");
         cardsWon.push(cardsChosen)
-        console.log(cardsWon);
     } else {
         const flipSound = document.getElementById("flip-sound");
         flipSound.play();
@@ -141,10 +140,6 @@ function checkForMatch() {
         scoreSection.classList.add("hidden");
         resultsScreen.classList.remove("hidden");
         victorySound.play();
-
-        // pairCounter.textContent = "Aaarrrgh! Not bad for a landlubber!";
-        // auto restarts after 3 seconds
-        // setTimeout(restart, 3000);
     };
 };
 
@@ -188,7 +183,6 @@ function flipCard() {
 
 function restart() {
     gameBoard.innerHTML = "";
-    // pairCounter.textContent = "0";
     cardsChosen = [];
     cardsChosenId = [];
     cardsWon = [];
@@ -197,6 +191,4 @@ function restart() {
     gameBoard.classList.remove("hidden");
     scoreSection.classList.remove("hidden");
     generateCards();
-}
-
-muteAudio();
+};
