@@ -72,6 +72,7 @@ playButton.addEventListener("click", playGame);
 
 /**
  * Starts the game when play-button is clicked
+ * Triggers the generateCards() function
  */
 function playGame() {
 
@@ -87,6 +88,7 @@ function playGame() {
  * Reveals gameboard and generates the cards face down
  * Brings how to play popup closer to the top of the
  * viewport so that it doesn't cover the control icons
+ * Inspired by Ania Kubów's Memory Card game
  */
 function generateCards() {
     for (let i = 0; i < cardArray.length; i++) {
@@ -112,6 +114,7 @@ function generateCards() {
  * If they do the card-type is pushed to the cardsWon array
  * If not they are removed from the chosenCards array and flipped
  * Also controls the output of the score section
+ * Heavily influenced by Ania Kubów's Memory Card game
  */
 function checkForMatch() {
     var cards = document.querySelectorAll('.card');
@@ -162,6 +165,7 @@ function checkForMatch() {
 
 /**
  * Mutes all the audio on startup/refresh
+ * Inspired by Marvelous Matching by David Calikes
  */
 function muteAudio() {
     const sounds = document.querySelectorAll("audio");
@@ -171,6 +175,7 @@ function muteAudio() {
 
 /**
  * Allows speaker icon/button to act as an on/off switch for all audio
+ * Inspired by Marvelous Matching by David Calikes
  */
 function toggleAudio() {
     const sounds = document.querySelectorAll("audio");
@@ -192,6 +197,7 @@ function toggleAudio() {
 /**
  * Flips the card when it is clicked on
  * Pushes the flipped card to the cardsChosen array
+ * Inspired by Ania Kubów's Memory Card game
  */
 function flipCard() {
     var cardId = this.getAttribute('data-id');
@@ -211,6 +217,7 @@ function flipCard() {
 /**
  * Resets the gameboard and score section once the user has found
  * all the pairs and clicked the play again button
+ * Inspired by Javascript Academy's memory card game
  */
 function restart() {
     gameBoard.innerHTML = "";
