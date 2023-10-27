@@ -126,7 +126,7 @@ function checkForMatch() {
         pairSound.play();
         cards[optionOneId].classList.add("correct");
         cards[optionTwoId].classList.add("correct");
-        cardsWon.push(cardsChosen)
+        cardsWon.push(cardsChosen);
     } else {
         const flipSound = document.getElementById("flip-sound");
         flipSound.play();
@@ -239,5 +239,5 @@ function toggleHowTo() {
         howTo.style.display = "none";
     } else {
         howTo.style.display = "block";
-    }
+    };
 };
