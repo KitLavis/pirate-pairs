@@ -63,7 +63,6 @@ var cardsChosenId = [];
 var cardsWon = [];
 const scoreSection = document.querySelector(".score-section");
 const counterContainer = document.querySelector('#counter-container');
-const pairCounter = document.querySelector(".pair-counter");
 const resultsScreen = document.querySelector('#results-screen');
 const howTo = document.getElementById("how-to-alt");
 
