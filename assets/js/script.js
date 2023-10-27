@@ -65,6 +65,7 @@ const scoreSection = document.querySelector(".score-section");
 const counterContainer = document.querySelector('#counter-container');
 const resultsScreen = document.querySelector('#results-screen');
 const howTo = document.getElementById("how-to-alt");
+const username = document.querySelector("#username");
 
 const playButton = document.querySelector("#play-button");
 playButton.addEventListener("click", playGame);
@@ -76,7 +77,6 @@ playButton.addEventListener("click", playGame);
 function playGame() {
 
     let introScreen = document.querySelector(".intro");
-    const username = document.querySelector("#username");
     introScreen.classList.add("hidden");
     gameBoard.classList.remove("hidden");
     scoreSection.classList.remove("hidden");
@@ -97,16 +97,16 @@ function generateCards() {
         card.setAttribute("class", "card back");
         card.addEventListener("click", flipCard);
         gameBoard.appendChild(card);
-    };
+    }
 
     howTo.setAttribute("id", "how-to");
 
     if (username.value === "") {
-        counterContainer.textContent = "Your pairs: " + cardsWon.length;
+       counterContainer.textContent = "Your pairs: " + cardsWon.length;
     } else {
-        counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
-    };
-};
+       counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
+    }
+}
 
 /**
  * Checks to see if the cards in the choseCards array match
@@ -138,13 +138,13 @@ function checkForMatch() {
         cards[optionTwoId].classList.remove("flipped");
         cards[optionOneId].classList.add("back");
         cards[optionTwoId].classList.add("back");
-    };
+    }
 
     if (username.value === "") {
-        counterContainer.textContent = "Your pairs: " + cardsWon.length;
+       counterContainer.textContent = "Your pairs: " + cardsWon.length;
     } else {
-        counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
-    };
+       counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
+    }
     
     cardsChosen = [];
     cardsChosenId = [];
@@ -159,8 +159,8 @@ function checkForMatch() {
         resultsScreen.classList.remove("hidden");
         victorySound.play();
         howTo.setAttribute("id", "how-to-alt");
-    };
-};
+    }
+}
 
 /**
  * Mutes all the audio on startup/refresh
@@ -190,7 +190,7 @@ function toggleAudio() {
         for (const sound of sounds) {
             sound.muted = true;
         }
-    };
+    }
 }
 
 /**
@@ -211,7 +211,7 @@ function flipCard() {
     if (cardsChosen.length === 2) {
         setTimeout(checkForMatch, 500);
     }
-};
+}
 
 /**
  * Resets the gameboard and score section once the user has found
@@ -228,7 +228,7 @@ function restart() {
     gameBoard.classList.remove("hidden");
     scoreSection.classList.remove("hidden");
     generateCards();
-};
+}
 
 /**
  * Reveals/hides the how to section when the help icon is clicked
@@ -238,5 +238,5 @@ function toggleHowTo() {
         howTo.style.display = "none";
     } else {
         howTo.style.display = "block";
-    };
-};
+    }
+}
