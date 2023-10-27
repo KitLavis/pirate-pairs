@@ -2,7 +2,7 @@
 
 Pirate Pairs is a fun and simple pirate themed matching pairs memory game, designed to be a quick uncomplicated boredom-beater, to briefly take the user's mind away from what they're doing.
 
-![Am I Responsive](assets/docs/images/am-i-responisve.webp)
+![Am I Responsive](docs/images/am-i-responsive.webp)
 
 ## User Stories
 
@@ -18,7 +18,7 @@ The over-arching colour scheme is also a matter of simplicity. Due to the varyin
 
 The background itself was chosen as the "aged-paper" asthetic gives the game a treasure map feel which is synoymous with pirates.
 
-![Colour scheme generate by coolors.co](assets/docs/images/pirate-pairs-colour-scheme)
+![Colour scheme generate by coolors.co](docs/images/pirate-pairs-colour-scheme.webp)
 
 ### Fonts/Typography
 
