@@ -65,11 +65,11 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
 
   - Congratulations message
 
-[Congratulations message](docs/images/congratulations-screenshot.webp)
+![Congratulations message](docs/images/congratulations-screenshot.webp)
 
   - Play again button
 
-[Play again button](docs/images/play-again-screenshot.webp)
+![Play again button](docs/images/play-again-screenshot.webp)
 
 ### Features for the Future
 
