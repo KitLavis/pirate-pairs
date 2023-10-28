@@ -1,14 +1,14 @@
 # Pirate Pairs
 
-Pirate Pairs is a fun and simple pirate themed matching pairs memory game, designed to be a quick uncomplicated boredom-beater, to briefly take the user's mind away from what they're doing.
+Pirate Pairs is a fun and simple pirate themed matching pairs memory game, designed to be a quick uncomplicated boredom-beater, to briefly take the user's mind away from whatever it is that they're doing.
 
 ![Am I Responsive](docs/images/am-i-responsive.webp)
 
-## User Stories
+## Planning
 
-## Project Aims
+### Project Aims
 
-## UX
+### UX
 
 The keyword kept in mind during the design of the user interface was simplicity. Therefore every feature is clear, concise, and available on the same screen, so there is no need for the user to scroll. This simplicity in design allowed for responsiveness across all screen sizes to be achieved with minimal layout changes.
 
@@ -30,7 +30,19 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
 
 ### Existing Features
 
+- Introduction screen
+  - Username input
+  - Controls
+- Game screen
+  - Playing cards
+- Results screen
+  - Congratulations message
+  - Play again button
+
 ### Features for the Future
+
+- Two-player mode
+- Card-flip animation
 
 #### Ease of Future Development
 
@@ -44,7 +56,7 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
   - GitHub pages waqs used for deployment.
 - Codeanywhere was the IDE for the project.
 - [Favicon.io](https://favicon.io) was used to generate the favicon.
-- [Am I Responsive](https://ui.dev/amiresponsive) was used to generate the main image at the top beginning of this document.
+- [Am I Responsive](https://ui.dev/amiresponsive) was used to generate the main image at the beginning of this document.
 
 ## Testing
 
@@ -87,3 +99,4 @@ A mentioned above, the project was deployed at a relatively early stage in order
 | [Freesounds](https://freesound.org/) | All audio |
 | [Coolors](https://coolors.co/) | Colour scheme image |
 | [Google Fonts](https://fonts.google.com/) | 'Pirata One' font |
+| [Pattern Monster](https://pattern.monster/) | Pattern for the back face of the playing cards |
