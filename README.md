@@ -43,6 +43,8 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
   - GitHub was used to store the code.
   - GitHub pages waqs used for deployment.
 - Codeanywhere was the IDE for the project.
+- [Favicon.io](https://favicon.io) was used to generate the favicon.
+- [Am I Responsive](https://ui.dev/amiresponsive) was used to generate the main image at the top beginning of this document.
 
 ## Testing
 
@@ -66,9 +68,16 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
 | ------ | ------ | ------ |
 | [Youtube](https://www.youtube.com/watch?v=tjyDOHzKN0w&t=306s&ab_channel=CodewithAniaKub%C3%B3w) | Ania Kubów | Inspired the generateCards, flipCard, and checkForMatch functions |
 | [Youtube](https://www.youtube.com/watch?v=xWdkt6KSirw&t=439s&ab_channel=JavaScriptAcademy) | JavaScript Academy |  Inspired the restart function |
+| [GitHub](https://github.com/davidcalikes/Marvelous-Matching) | David Calikes |  Inspired the muteAudio and toggleAudio functions |
 
 ### Media
 
-<a href="https://www.freepik.com/free-photo/wooden-floor-background_4100933.htm#query=treasure%20map&position=3&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
+| Source | Content |
+| ------ | ------ |
+| [Freepik](https://www.freepik.com/free-photo/wooden-floor-background_4100933.htm#query=treasure%20map&position=3&from_view=keyword&track=ais) | Background image |
+| [Icons8](https://icons8.com/icons) | Icons for the favicon, the playing cards, and the skull on the intro-screen |
+| [Freesounds](https://freesound.org/) | All audio |
+| [Coolors](https://coolors.co/) | Colour scheme image |
+| [Google Fonts](https://fonts.google.com/) | 'Pirata One' font |
+
 pair sound <https://freesound.org/people/michael_grinnell/sounds/464420/>
-<a target="_blank" href="https://icons8.com/icon/38421/pirates-of-the-caribbean">Pirates of the Caribbean</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
