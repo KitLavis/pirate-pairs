@@ -31,13 +31,45 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
 ### Existing Features
 
 - Introduction screen
+
+![Introduction screen](docs/images/intro-screen-screenshot.webp)
+
   - Username input
+
+![Username input](docs/images/username-input-screenshot.webp)
+
   - Controls
+
+![Control section](docs/images/controls-screenshot.webp)
+
+  - How to popup
+
+![How to popup](docs/images/how-to-screenshot.webp)
+
 - Game screen
+
+![Game Screen](docs/images/game-screen-screenshot.webp)
+
   - Playing cards
+
+![Gameboard](docs/images/gameboard-screenshot.webp)
+
+  - Pair counter
+
+![Pair counter without username](docs/images/your-pairs-screenshot.webp)
+![Pair counter with username](docs/images/username-example-screenshot.webp)
+
 - Results screen
+
+![Results screen](docs/images/results-screen-screenshot.webp)
+
   - Congratulations message
+
+[Congratulations message](docs/images/congratulations-screenshot.webp)
+
   - Play again button
+
+[Play again button](docs/images/play-again-screenshot.webp)
 
 ### Features for the Future
 
