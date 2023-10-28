@@ -57,7 +57,7 @@ The control section is once again as simple as possible. The two font awesome ic
 
 ![Gameboard](docs/images/gameboard-screenshot.webp)
 
-Once the user has decided on a username and clicks the play button, the text input and button are hidden and the gameboard is generated in its place. The gameboard itself is a grid of cards, in three rows and four columns, or four rows and three columns if on a mobile device. These cards are face down, and flip once clicked, revealing one of the six possible images. The position of these cards is randomised, so each time the game is played the locations are different. Once two cards have been flipped, if they match the cards are removed from the grid and the pair counter (see below) is updated. If they do not match then the cards are flipped back over and the game carries on.
+Once the user has decided on a username and clicks the play button, the text input and button are hidden and the gameboard is generated in its place. The gameboard itself is a grid of cards, in three rows and four columns, or four rows and three columns if on a mobile device. These cards are face down, and flip once clicked, revealing one of the six possible images. The position of these cards is randomised, so each time the game is played the locations are different. Once two cards have been flipped, if they match the cards are removed from the grid and the pair counter (see below) is updated. If they do not match then the cards are flipped back over and the game carries on. To add to the user experience, a 'page-turn' sound is heard when no match is found and the cards flip back over, and a 'coin purse' sound is heard when a match is found.
 
 The style of the back-face of the cards is a pattern made to look like a classic deck of playing cards, to tie in with the pirate theme. The six front-face icons were chosen for the same reason.
 
@@ -73,17 +73,25 @@ The style of the back-face of the cards is a pattern made to look like a classic
 ![Pair counter without username](docs/images/your-pairs-screenshot.webp)
 ![Pair counter with username](docs/images/username-example-screenshot.webp)
 
+The pair counter, situated between the cards and the control section, shows the user how many correct pairs they have found. If the user decided not to enter a username on the introduction pairs, the counter will show 'Your Pairs' plus however many pairs they have found. If, as can be seen in the example shown in the second screenshot, the user decides to enter a name, it will show as '*Username*'s Pairs'.
+
 - Results screen
 
 ![Results screen](docs/images/results-screen-screenshot.webp)
+
+Once the user has found all possible pairs, the cards and counter are removed to give way for the results screen.
 
   - Congratulations message
 
 ![Congratulations message](docs/images/congratulations-screenshot.webp)
 
+The congratulations message, paired with a 'victorious-trumpet' sound, lets the user know that they have completed the game. The message itself further emphasises the pirate theme, with the use of recognisable pirate phrases such as 'Aaaargh' and 'landlubber'.
+
   - Play again button
 
 ![Play again button](docs/images/play-again-screenshot.webp)
+
+The user then has the option to play again by clicking the play again button. This takes the user back to the game screen with regenrated cards in a random order, and the paircounter reset to zero. The username inputted at the start of the game remains the same. To change this, the user must refresh the browser page.
 
 ### Features for the Future
 
