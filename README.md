@@ -143,7 +143,14 @@ A number of steps were taken in order to allow for further development:
 
 ### Manual Testing
 
-### Debugging
+The project was deployed early and sent to multiple potential users in order to carrry out manual testing. Any design faults or issues found were then solved throughout the building of the project. Examples of these are:
+- The pair counter not updating as more matches were found.
+- The how-to popup not closing when the help button was clicked.
+- The same card being able to be clicked twice and being logged as a pair.
+
+### Existing Issues
+
+There is only one issue yet to be solved in the current iteration of the project. If the user clicks a third card too quickly before the checkForMatch function is complete, the third card stays face up and is then unplayable. The user must then refresh the page and start again.
 
 ## Deployment
 
