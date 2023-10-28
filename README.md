@@ -60,6 +60,14 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
 
 ## Deployment
 
+The project was deployed via GitHub Pages. To do this, the following process was followed:
+
+- While in the GitHub repository, click the settings icon in the nav bar.
+- Select the Main Branch from the source section drop-down menu and click save.
+- Once succesfully deployed, the deployment can be accessed from the Deployment Section in the right-hand column of the code page of the GitHub repository.
+
+A mentioned above, the project was deployed at a relatively early stage in order to carry out manual testing, and to make sure the site works as designed.
+
 ## Credits
 
 ### Content
@@ -79,5 +87,3 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
 | [Freesounds](https://freesound.org/) | All audio |
 | [Coolors](https://coolors.co/) | Colour scheme image |
 | [Google Fonts](https://fonts.google.com/) | 'Pirata One' font |
-
-pair sound <https://freesound.org/people/michael_grinnell/sounds/464420/>
