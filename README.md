@@ -96,9 +96,20 @@ The user then has the option to play again by clicking the play again button. Th
 ### Features for the Future
 
 - Two-player mode
+
+In future a two-player mode could be added, to allow friends/colleagues to play together. The player-one and player-two would take it in turns to try to find a match. Once all the matches are found, the player with the highest number of pairs wins. 24 cards consisting of 12 different icons would be generated for this mode.
+
 - Card-flip animation
 
+A slick card-flip animation could be added in the future to improve user experience.
+
+- Background music with seperate control
+
+In this initial iteration of the project background/theme music was left out due to a lack of suitable music being found. However this and a dedicated background music on/off switch could be added in the future.
+
 #### Ease of Future Development
+
+
 
 ## Tools and Technologies
 
