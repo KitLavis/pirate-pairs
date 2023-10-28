@@ -34,17 +34,20 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
 
 ![Introduction screen](docs/images/intro-screen-screenshot.webp)
 
+As previously mentioned, the site is designed to be as simple as the theme will allow, so as not to overcrowd the site, and over-stimulate the user. A simple black 'line-drawing' style pirate skull icon was chosen to add imagery to the page and to emphasise the theme, without being too 'over the top'. The Screen is headed by the name of the game in the 'Pirata One' font, which stays as a consistent feature in every area of the project.
+
   - Username input
 
 ![Username input](docs/images/username-input-screenshot.webp)
 
-  - Controls
+The username input allows the user to input a name of their choosing to use while playing the game. This is optional, as not everybody will want to do so. The play button, styled to the match the general theme, is a clickable button which moves the user onto the game screen.
+
+  - Controls and how-to popup
 
 ![Control section](docs/images/controls-screenshot.webp)
-
-  - How to popup
-
 ![How to popup](docs/images/how-to-screenshot.webp)
+
+The control section is once again as simple as possible. The two font awesome icons can be clicked in order to reveal the description of how to play the game and to turn the game sounds on and off respectively. As can be seen in the second screenshot, the speaker icon changes once clicked to a speaker with soundwaves, instantly recognisable as meaning 'sound on'. These features also remain consistent throughout.
 
 - Game screen
 
@@ -53,6 +56,17 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
   - Playing cards
 
 ![Gameboard](docs/images/gameboard-screenshot.webp)
+
+Once the user has decided on a username and clicks the play button, the text input and button are hidden and the gameboard is generated in its place. The gameboard itself is a grid of cards, in three rows and four columns, or four rows and three columns if on a mobile device. These cards are face down, and flip once clicked, revealing one of the six possible images. The position of these cards is randomised, so each time the game is played the locations are different. Once two cards have been flipped, if they match the cards are removed from the grid and the pair counter (see below) is updated. If they do not match then the cards are flipped back over and the game carries on.
+
+The style of the back-face of the cards is a pattern made to look like a classic deck of playing cards, to tie in with the pirate theme. The six front-face icons were chosen for the same reason.
+
+![Pirate icon](assets/images/pirate.webp)
+![Coin icon](assets/images/coin.webp)
+![helm icon](assets/images/helm.webp)
+![Map icon](assets/images/map.webp)
+![Skull icon](assets/images/skull.webp)
+![Treasure icon](assets/images/treasure.webp)
 
   - Pair counter
 
