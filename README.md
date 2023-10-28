@@ -62,6 +62,11 @@ As the how-to popup contains dense text, the 'Gill-sans' sans-serif font-family 
 
 ### Content
 
+| Source | Authour | Content |
+| ------ | ------ | ------ |
+| [Youtube](https://www.youtube.com/watch?v=tjyDOHzKN0w&t=306s&ab_channel=CodewithAniaKub%C3%B3w) | Ania Kubów | Inspired the generateCards, flipCard, and checkForMatch functions |
+| [Youtube](https://www.youtube.com/watch?v=xWdkt6KSirw&t=439s&ab_channel=JavaScriptAcademy) | JavaScript Academy |  Inspired the restart function |
+
 ### Media
 
 <a href="https://www.freepik.com/free-photo/wooden-floor-background_4100933.htm#query=treasure%20map&position=3&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
