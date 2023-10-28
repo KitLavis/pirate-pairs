@@ -109,7 +109,17 @@ In this initial iteration of the project background/theme music was left out due
 
 #### Ease of Future Development
 
-
+A number of steps were taken in order to allow for further development:
+- HTML:
+  - Semantic markup is used where applicable.
+  - ID and class attributes are clear and relate to the elements' usage.
+  - Clear comments describe each aspect of the code.
+- CSS:
+  - The stylesheet begins with more general rules at the top, then increase with specificity further down.
+  - Comments are used to clearly label what the code does and/or affects.
+- JavaScript:
+  - Informative yet concise comments are used to describe each function.
+  - The function names themselves are also clear and describe what the function does.
 
 ## Tools and Technologies
 
@@ -129,7 +139,7 @@ In this initial iteration of the project background/theme music was left out due
 
 - The HTML was validated with the W3C validator, the result of which can be found [here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitlavis.github.io%2Fpirate-pairs%2F).
 - The CSS was validated with the W3C CSS validator, the result of which can be found [here](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fkitlavis.github.io%2Fpirate-pairs%2F&usermedium=all&vextwarning=&warning=1).
-- The JavaScript was validated using
+- The JavaScript was validated using t
 
 ### Manual Testing
 
