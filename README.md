@@ -11,7 +11,7 @@ Pirate Pairs is a fun and simple pirate themed matching pairs memory game, desig
 The first phase of planning for the project was centred around the pin-pointing who the target audience is, the aims of the project, and how these aims will be met:
 
 - Who is the project for?
-  - The project is for anybody sat in front of a computer, maybe at work or university, who need a quick break from their current task.
+  - The project is for anybody sat in front of a computer, maybe at work or university.
 - The aims of the project:
   - To provide a simple boredom-busting game.
   - To take peoples' minds away from their current task, to allow them to work on the issue subconsciously.
