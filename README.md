@@ -8,9 +8,15 @@ Pirate Pairs is a fun and simple pirate themed matching pairs memory game, desig
 
 ### Project Aims
 
-### UX
+### Design
 
 The keyword kept in mind during the design of the user interface was simplicity. Although the project is designed to be played on the device's standard configuration (mobile and tablet devices in portrait, larger devices such as laptops and desktops in landscape), this simplicity allows the game to be played in both monitor configurations on the vast majority of the most common devices without much layour change, and without the need to scroll.
+
+#### Wireframing
+
+![Wireframe of introduction screen](docs/images/intro-screen.webp)
+![Wireframe of game screen](docs/images/game-screen.webp)
+![Wireframe of iesults screen](docs/images/results-screen.webp)
 
 ### Background and Colour Scheme
 
