@@ -166,10 +166,7 @@ The project was deployed early and sent to multiple potential users in order to 
 - The pair counter not updating as more matches were found.
 - The how-to popup not closing when the help button was clicked.
 - The same card being able to be clicked twice and being logged as a pair.
-
-### Existing Issues
-
-There is only one issue yet to be solved in the current iteration of the project. If the user clicks a third card too quickly before the checkForMatch function is complete, the third card stays face up and is then unplayable. The user must then refresh the page and start again.
+- If the user clicks a third card too quickly before the checkForMatch function is complete, the third card remains face up and is unplayable.
 
 ## Deployment
 
