@@ -120,24 +120,35 @@ function checkForMatch() {
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
 
+
     if (cardsChosen[0] === cardsChosen[1]) {
         const pairSound = document.getElementById("pair-sound");
         pairSound.play();
         cards[optionOneId].classList.add("correct");
         cards[optionTwoId].classList.add("correct");
         cardsWon.push(cardsChosen);
+
+        var remainingCards = document.querySelectorAll('.back');
+        for (let card of remainingCards) {
+            card.addEventListener("click", flipCard);
+        }
+
     } else {
         const flipSound = document.getElementById("flip-sound");
         flipSound.play();
 
         cards[optionOneId].setAttribute("src", "assets/images/card_back.webp");
         cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp");
-        cards[optionOneId].addEventListener("click", flipCard);
-        cards[optionTwoId].addEventListener("click", flipCard);
+
         cards[optionOneId].classList.remove("flipped");
         cards[optionTwoId].classList.remove("flipped");
         cards[optionOneId].classList.add("back");
         cards[optionTwoId].classList.add("back");
+
+        var remainingCards = document.querySelectorAll('.back');
+        for (let card of remainingCards) {
+            card.addEventListener("click", flipCard);
+        }
     }
 
     if (username.value === "") {
@@ -209,7 +220,11 @@ function flipCard() {
     this.removeEventListener("click", flipCard);
     
     if (cardsChosen.length === 2) {
-        setTimeout(checkForMatch, 500);
+        var remainingCards = document.querySelectorAll('img');
+        for (let card of remainingCards) {
+            card.removeEventListener("click", flipCard);
+        }
+        setTimeout(checkForMatch, 500)
     }
 }
 
