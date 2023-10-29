@@ -1,6 +1,6 @@
 # Pirate Pairs
 
-Pirate Pairs is a fun and simple pirate themed matching pairs memory game, designed to be a quick uncomplicated boredom-beater, to briefly take the user's mind away from whatever it is that they're doing.
+Pirate Pairs is a fun and simple pirate themed matching pairs memory game, designed to be a quick uncomplicated boredom-buster, to briefly take the user's mind away from whatever it is that they're doing.
 
 ![Am I Responsive](docs/images/am-i-responsive.webp)
 
@@ -8,9 +8,22 @@ Pirate Pairs is a fun and simple pirate themed matching pairs memory game, desig
 
 ### Project Aims
 
+The first phase of planning for the project was centred around the pin-pointing who the target audience is, the aims of the project, and how these aims will be met:
+
+- Who is the project for?
+  - The project is for anybody sat in front of a computer, maybe at work or university, who need a quick break from their current task.
+- The aims of the project:
+  - To provide a simple boredom-busting game.
+  - To take peoples' minds away from their current task, to allow them to work on the issue subconsciously.
+- How will the aims be met?
+  - Blocks of text will be kept to a minimum.
+  - JavaScript will be used in a way that makes the game as simple and intuitive as possible.
+
 ### Design
 
-The keyword kept in mind during the design of the user interface was simplicity. Although the project is designed to be played on the device's standard configuration (mobile and tablet devices in portrait, larger devices such as laptops and desktops in landscape), this simplicity allows the game to be played in both monitor configurations on the vast majority of the most common devices without much layour change, and without the need to scroll.
+The keyword kept in mind during the design of the user interface was simplicity, therefore the site itself is kept as tidy and as uncluttered as possible.
+
+Although the project is designed to be played on the device's standard configuration (mobile and tablet devices in portrait, larger devices such as laptops and desktops in landscape), this simplicity allows the game to be played in both monitor configurations on the vast majority of the most common devices without much layout change, and without the need to scroll.
 
 #### Wireframing
 
