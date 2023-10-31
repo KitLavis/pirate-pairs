@@ -100,7 +100,8 @@ function generateCards() {
     }
 
     howTo.setAttribute("id", "how-to");
-
+    
+    // Sets the pair counter. Once a pair is found, checkForMatch updates it
     if (username.value === "") {
        counterContainer.textContent = "Your pairs: " + cardsWon.length;
     } else {
@@ -124,10 +125,12 @@ function checkForMatch() {
     if (cardsChosen[0] === cardsChosen[1]) {
         const pairSound = document.getElementById("pair-sound");
         pairSound.play();
+        // Adds .correct to correct cards (hides them)
         cards[optionOneId].classList.add("correct");
         cards[optionTwoId].classList.add("correct");
+        // Pushes correct cards to cardsWon array
         cardsWon.push(cardsChosen);
-
+        // Unlocks the board
         var remainingCards = document.querySelectorAll('.back');
         for (let card of remainingCards) {
             card.addEventListener("click", flipCard);
@@ -136,30 +139,32 @@ function checkForMatch() {
     } else {
         const flipSound = document.getElementById("flip-sound");
         flipSound.play();
-
+        // 'Flips' cards back over
         cards[optionOneId].setAttribute("src", "assets/images/card_back.webp");
         cards[optionTwoId].setAttribute("src", "assets/images/card_back.webp");
-
         cards[optionOneId].classList.remove("flipped");
         cards[optionTwoId].classList.remove("flipped");
         cards[optionOneId].classList.add("back");
         cards[optionTwoId].classList.add("back");
-
+        // Unlocks the board
         var remainingCards = document.querySelectorAll('.back');
         for (let card of remainingCards) {
             card.addEventListener("click", flipCard);
         }
     }
-
+    
+    // Controls the pair counter output
     if (username.value === "") {
        counterContainer.textContent = "Your pairs: " + cardsWon.length;
     } else {
        counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
     }
     
+    // Clears the two arrays
     cardsChosen = [];
     cardsChosenId = [];
-
+    
+    // Checks that all pairs are found and triggers result screen
     if (cardsWon.length === cardArray.length / 2) {
         const victorySound = document.getElementById("victory-sound");
         const resetButton = document.getElementById("reset-button");
@@ -219,6 +224,7 @@ function flipCard() {
     this.classList.remove("back");
     this.removeEventListener("click", flipCard);
     
+    // Triggers checkForMatch once two cards are selected
     if (cardsChosen.length === 2) {
         var remainingCards = document.querySelectorAll('img');
         for (let card of remainingCards) {
