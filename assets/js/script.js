@@ -121,6 +121,7 @@ function checkForMatch() {
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
 
+    let remainingCards = document.querySelectorAll('img');
 
     if (cardsChosen[0] === cardsChosen[1]) {
         const pairSound = document.getElementById("pair-sound");
@@ -131,7 +132,6 @@ function checkForMatch() {
         // Pushes correct cards to cardsWon array
         cardsWon.push(cardsChosen);
         // Unlocks the board
-        var remainingCards = document.querySelectorAll('.back');
         for (let card of remainingCards) {
             card.addEventListener("click", flipCard);
         }
@@ -224,9 +224,9 @@ function flipCard() {
     this.classList.remove("back");
     this.removeEventListener("click", flipCard);
     
+    let remainingCards = document.querySelectorAll('img');
     // Triggers checkForMatch once two cards are selected
     if (cardsChosen.length === 2) {
-        var remainingCards = document.querySelectorAll('img');
         for (let card of remainingCards) {
             card.removeEventListener("click", flipCard);
         }
