@@ -100,7 +100,7 @@ function generateCards() {
     }
 
     howTo.setAttribute("id", "how-to");
-    
+
     // Sets the pair counter. Once a pair is found, checkForMatch updates it
     if (username.value === "") {
        counterContainer.textContent = "Your pairs: " + cardsWon.length;
@@ -147,7 +147,7 @@ function checkForMatch() {
         cards[optionOneId].classList.add("back");
         cards[optionTwoId].classList.add("back");
         // Unlocks the board
-        var remainingCards = document.querySelectorAll('.back');
+        remainingCards = document.querySelectorAll('.back');
         for (let card of remainingCards) {
             card.addEventListener("click", flipCard);
         }
@@ -230,7 +230,7 @@ function flipCard() {
         for (let card of remainingCards) {
             card.removeEventListener("click", flipCard);
         }
-        setTimeout(checkForMatch, 500)
+        setTimeout(checkForMatch, 500);
     }
 }
 
