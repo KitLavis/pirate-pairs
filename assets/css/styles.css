@@ -168,6 +168,8 @@ ul li {
     padding-left: 0.5em;
 }
 
+/* media query for landscape phones */
+
 @media screen and (min-width: 576px) {
     #intro-pirate {
         width: 10vw;
@@ -187,7 +189,7 @@ ul li {
         height: 90px;
     }
 
-/* media query for tablets and larger (768px and up) */
+/* media query for tablets and larger (768px and up). Min-height added to avoid landscape mobile devices */
 @media screen and (min-width: 768px) and (min-height: 601px) {
 
     body {
@@ -235,6 +237,7 @@ ul li {
     }
 }
 
+/* Media query for laptops and larger. Min-height added to avoid Google Nest style devices */
 @media screen and (min-width: 992px) and (min-height: 800px) {
     #how-to {
         width: 50vw;
