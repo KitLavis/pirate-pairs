@@ -91,10 +91,18 @@ button {
     margin: 2px;
 }
 
-.card img {
+.card .back {
     width: 100%;
     height: 100%;
     border-radius: 10%;
+}
+
+/* Centres icons once card is flipped */
+.flipped {
+    width: 70px;
+    height: 70px;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
 }
 
 /* class added once a match is found. "Empties" the card div */
@@ -188,6 +196,12 @@ ul li {
         width: 60px;
         height: 90px;
     }
+    .flipped {
+        width: 60px;
+        height: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 
 /* media query for tablets and larger (768px and up). Min-height added to avoid landscape mobile devices */
 @media screen and (min-width: 768px) and (min-height: 601px) {
@@ -214,6 +228,13 @@ ul li {
         width: 120px;
         height: 180px;
         margin: 5px;
+    }
+
+    .flipped {
+        width: 120px;
+        height: 120px;
+        padding-bottom: 30px;
+        padding-top: 30px;
     }
 
     .score-container {
