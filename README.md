@@ -149,6 +149,7 @@ A number of steps were taken in order to allow for further development:
   - GitHub was used to store the code.
   - GitHub pages waqs used for deployment.
 - Codeanywhere was the IDE for the project.
+- Balsamiq was used to create the wireframes.
 - [Favicon.io](https://favicon.io) was used to generate the favicon.
 - [Am I Responsive](https://ui.dev/amiresponsive) was used to generate the main image at the beginning of this document.
 

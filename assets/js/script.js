@@ -88,6 +88,7 @@ function playGame() {
  * Brings how to play popup closer to the top of the
  * viewport so that it doesn't cover the control icons
  * Inspired by Ania Kubów's Memory Card game
+ * https://www.youtube.com/watch?v=tjyDOHzKN0w&t=307s&ab_channel=CodewithAniaKub%C3%B3w
  */
 function generateCards() {
     for (let i = 0; i < cardArray.length; i++) {
@@ -115,6 +116,7 @@ function generateCards() {
  * If not they are removed from the chosenCards array and flipped
  * Also controls the output of the score section
  * Heavily influenced by Ania Kubów's Memory Card game
+ * https://www.youtube.com/watch?v=tjyDOHzKN0w&t=307s&ab_channel=CodewithAniaKub%C3%B3w
  */
 function checkForMatch() {
     var cards = document.querySelectorAll('.card');
@@ -181,6 +183,7 @@ function checkForMatch() {
 /**
  * Mutes all the audio on startup/refresh
  * Inspired by Marvelous Matching by David Calikes
+ * https://github.com/davidcalikes/Marvelous-Matching
  */
 function muteAudio() {
     const sounds = document.querySelectorAll("audio");
@@ -191,6 +194,7 @@ function muteAudio() {
 /**
  * Allows speaker icon/button to act as an on/off switch for all audio
  * Inspired by Marvelous Matching by David Calikes
+ * https://github.com/davidcalikes/Marvelous-Matching
  */
 function toggleAudio() {
     const sounds = document.querySelectorAll("audio");
@@ -213,6 +217,7 @@ function toggleAudio() {
  * Flips the card when it is clicked on
  * Pushes the flipped card to the cardsChosen array
  * Inspired by Ania Kubów's Memory Card game
+ * https://www.youtube.com/watch?v=tjyDOHzKN0w&t=307s&ab_channel=CodewithAniaKub%C3%B3w
  */
 function flipCard() {
     var cardId = this.getAttribute('data-id');
@@ -238,6 +243,7 @@ function flipCard() {
  * Resets the gameboard and score section once the user has found
  * all the pairs and clicked the play again button
  * Inspired by Javascript Academy's memory card game
+ * https://www.youtube.com/watch?v=xWdkt6KSirw&t=440s&ab_channel=JavaScriptAcademy
  */
 function restart() {
     gameBoard.innerHTML = "";
