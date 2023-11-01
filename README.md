@@ -89,10 +89,9 @@ The style of the back-face of the cards is a pattern made to look like a classic
 
   - Pair counter
 
-![Pair counter without username](docs/images/your-pairs-screenshot.webp)
 ![Pair counter with username](docs/images/username-example-screenshot.webp)
 
-The pair counter, situated between the cards and the control section, shows the user how many correct pairs they have found. If the user decided not to enter a username on the introduction pairs, the counter will show 'Your Pairs' plus however many pairs they have found. If, as can be seen in the example shown in the second screenshot, the user decides to enter a name, it will show as '*Username*'s Pairs'.
+The pair counter, situated between the cards and the control section, shows the user how many correct pairs they have found. The name entered by the user is shown here as '*Username*'s Pairs'.
 
 - Results screen
 
