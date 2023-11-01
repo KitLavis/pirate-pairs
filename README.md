@@ -159,7 +159,10 @@ A number of steps were taken in order to allow for further development:
 
 - The HTML was validated with the W3C validator, the result of which can be found [here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitlavis.github.io%2Fpirate-pairs%2F).
 - The CSS was validated with the W3C CSS validator, the result of which can be found [here](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fkitlavis.github.io%2Fpirate-pairs%2F&usermedium=all&vextwarning=&warning=1).
-- The JavaScript was validated using the JSHint validator.
+- The JavaScript was validated using the JSHint validator. The warning of the unused variable is due to the event listener referencing the function being in the HTML element rather than the JavaScript.
+![JSHint Screenshot](docs/images/jshint.webp)
+- Finally, a lighthouse test from Google's Developer Tools was carried out.
+![Lighthouse Result](docs/images/lighthouse.webp)
 
 ### Manual Testing
 
