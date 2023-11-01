@@ -70,7 +70,7 @@ The control section is also as simple as possible. The two font awesome icons ca
 
 - Game screen
 
-![Game Screen](docs/images/game-screen-screenshot.webp)
+![Gamescreen screenshot](docs/images/game-screen-screenshot.webp)
 
   - Playing cards
 
