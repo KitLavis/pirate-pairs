@@ -107,7 +107,7 @@ button {
 
 /* class added once a match is found. "Empties" the card div */
 .correct {
-    background-image: url("assets/images/blank.webp");
+    background-image: url("../images/blank.webp");
     opacity: 0;
 }
 
