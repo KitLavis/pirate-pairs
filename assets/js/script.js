@@ -75,12 +75,16 @@ playButton.addEventListener("click", playGame);
  * Triggers the generateCards() function
  */
 function playGame() {
-
+    // Makes username required
+    if (username.value == "") {
+        alert("You must enter a username")
+    } else {
     let introScreen = document.querySelector(".intro");
     introScreen.classList.add("hidden");
     gameBoard.classList.remove("hidden");
     scoreSection.classList.remove("hidden");
     generateCards();
+    };
 }
 
 /**
@@ -103,11 +107,7 @@ function generateCards() {
     howTo.setAttribute("id", "how-to");
 
     // Sets the pair counter. Once a pair is found, checkForMatch updates it
-    if (username.value === "") {
-       counterContainer.textContent = "Your pairs: " + cardsWon.length;
-    } else {
-       counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
-    }
+    counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
 }
 
 /**
@@ -156,11 +156,7 @@ function checkForMatch() {
     }
     
     // Controls the pair counter output
-    if (username.value === "") {
-       counterContainer.textContent = "Your pairs: " + cardsWon.length;
-    } else {
-       counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
-    }
+    counterContainer.textContent = username.value + "'s pairs: " + cardsWon.length;
     
     // Clears the two arrays
     cardsChosen = [];

@@ -27,9 +27,9 @@ Although the project is designed to be played on the device's standard configura
 
 #### Wireframing
 
-![Wireframe of introduction screen](docs/images/intro-screen.webp)
-![Wireframe of game screen](docs/images/game-screen.webp)
-![Wireframe of iesults screen](docs/images/results-screen.webp)
+![Wireframe of introduction screen](docs/images/intro-screen-wireframe.webp)
+![Wireframe of game screen](docs/images/game-screen-wireframe.webp)
+![Wireframe of iesults screen](docs/images/results-screen-wireframe.webp)
 
 ### Background and Colour Scheme
 
@@ -59,7 +59,7 @@ As previously mentioned, the site is designed to be as simple as the theme will 
 
 ![Username input](docs/images/username-input-screenshot.webp)
 
-The username input allows the user to input a name of their choosing to use while playing the game. This is optional, as not everybody will want to do so. The play button, styled to match the general theme, is a clickable button which moves the user on to the game screen.
+The username input allows the user to input a name of their choosing to use while playing the game. If a username is not entered, the user is alerted with a message informing them that it is a requirement. The play button, styled to match the general theme, is a clickable button which moves the user on to the game screen.
 
   - Controls and how-to popup
 
